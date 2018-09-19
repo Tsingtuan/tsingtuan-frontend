@@ -1,7 +1,6 @@
-
-<!--index.wxml-->
-<view class="container">
-  <view class="header">
-  
-  </view>
+<view class="page" xmlns:wx="http://www.w3.org/1999/xhtml">
+    <view class="page__bd">
+        <Login-Header showTopTips="{{showTopTips}}"/>
+        <Login-List />
+    </view>
 </view>

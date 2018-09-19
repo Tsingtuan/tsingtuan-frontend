@@ -1,0 +1,8 @@
+/* pages/components/LoginHeader.wxss */
+.placeholder{
+    background-image: url("http://placekitten.com/600/288");
+    background-size: cover;
+    margin-bottom: 72rpx;
+    height: 364rpx;
+    color: #cfcfcf;
+}
