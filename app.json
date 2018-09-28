@@ -3,7 +3,9 @@
         "pages/index/index",
         "pages/logs/logs",
         "pages/Login/Login",
-        "pages/Login_success/Login_success"
+        "pages/Login_success/Login_success",
+        "pages/Sponsor-View/Sponsor",
+        "pages/Personnel-arrangement/Personnel-arr"
     ],
     "window": {
         "backgroundTextStyle": "light",
