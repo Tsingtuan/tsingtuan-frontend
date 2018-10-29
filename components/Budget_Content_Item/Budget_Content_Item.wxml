@@ -1,0 +1,24 @@
+<!--components/Budget_Content_Item/Budget_Content_Item.wxml-->
+    <view class="weui-panel__hd" style="font-size:16px">{{ single.title }}</view>
+    <view wx:for="{{ single.items }}">
+        <view class="weui-cell">
+            <view class="weui-cell__hd" style="display:inline-block">
+                <image src="/images/icon_tabbar.png" style="margin-right: 5px;vertical-align: middle;width:20px; height: 20px;"></image>
+            </view>
+            <view class="weui-cell__bd" style="display:inline-block;font-size:12px;color:#999">{{          item.name }}</view>   
+    </view>
+    <view class="weui-cell__bd" style="padding: 2px 15px 6px 15px;font-weight:bold;font-size:14px">{{ item.subName }}</view>
+    <view class="weui-panel__bd" style="padding:15px">
+        <view class="weui-grids" style="display:flex;justify-content:space-around;">
+            <block wx:for="{{ item.imageSrc }}">
+                <navigator url="" class="weui-grid" hover-class="weui-grid_active" style="display:inline-block;">
+                    <image class="weui-grid__icon" src="{{ item }}" style="vertical-align: middle;width:100px; height: 100px;"/>
+                </navigator>
+            </block>
+        </view>
+    </view>
+    <view class="weui-cell__bd" style="display:flex;align-items:center;color:#999;font-size:12px;padding:0 15px;">
+          <i class="iconfont icon-zuobiao" style="flex-grow:1;"></i><navigator url="" style="flex-grow:15;color:#4286f4">{{ item.location }}</navigator><text style="flex-grow:1;">距您{{item.distance }}m</text>
+          </view>
+    </view>   
+

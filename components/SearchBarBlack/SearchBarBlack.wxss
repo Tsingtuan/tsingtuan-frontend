@@ -1,0 +1,32 @@
+/* components/SearchBarBlack/SearchBarBlack.wxss */
+.weui-search-bar {
+  background-color: #2B2A30;
+  border: none;
+}
+
+.weui-search-bar__form {
+  background-color:#7A797D; 
+  border: none;
+}
+input {
+  min-height: none;
+  color: white;
+}
+
+.phcolor{
+    color: white;
+}
+.weui-search-bar__input {
+   color:white;
+   height: 22px;
+   line-height: 22px;
+   font-size: 12px;
+}
+.searchbar-result {
+    margin-top: 0;
+    font-size: 14px;
+}
+
+.searchbar-result:before {
+    display: none;
+}
