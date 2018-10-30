@@ -1,5 +1,6 @@
 {
     "usingComponents": {
         "Search-Bar": "/components/SearchBar/Search_Bar"
-    }
+    },
+    "navigationBarTitleText": "人事安排"
 }

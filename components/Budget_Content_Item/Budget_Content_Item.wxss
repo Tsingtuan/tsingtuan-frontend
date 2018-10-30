@@ -1,0 +1,39 @@
+/* components/Budget_Content_Item/Budget_Content_Item.wxss */
+
+@font-face {font-family: "iconfont";
+  src: url('iconfont.eot?t=1540710538311'); /* IE9*/
+  src: url('iconfont.eot?t=1540710538311#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('data:application/x-font-woff;charset=utf-8;base64,d09GRgABAAAAAAQUAAsAAAAABlwAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAABHU1VCAAABCAAAADMAAABCsP6z7U9TLzIAAAE8AAAARAAAAFY8i0gHY21hcAAAAYAAAABLAAABcOc9telnbHlmAAABzAAAAGQAAABkIjP/GGhlYWQAAAIwAAAALwAAADYTFkcXaGhlYQAAAmAAAAAcAAAAJAfeA4NobXR4AAACfAAAAAgAAAAICAAAAGxvY2EAAAKEAAAABgAAAAYAMgAAbWF4cAAAAowAAAAeAAAAIAEOACduYW1lAAACrAAAAUUAAAJtPlT+fXBvc3QAAAP0AAAAIAAAADHk599reJxjYGRgYOBikGPQYWB0cfMJYeBgYGGAAJAMY05meiJQDMoDyrGAaQ4gZoOIAgCKIwNPAHicY2BkYWCcwMDKwMHUyXSGgYGhH0IzvmYwYuRgYGBiYGVmwAoC0lxTGByeiT4TZW7438AQw9zA0AAUZgTJAQDgbQwNeJxjYGBgZWBgYAZiHSBmYWBgDGFgZAABP6AoI1icmYELLM7CoARWwwISfyb6/z+MBPJZwCQDIxvDKOABkzJQHjisIJiBEQBcRAm9AAACAAD/5gNCAyAADgAaAAABDgEHHgEXFjI3PgE3LgEDLgEnPgE3HgEXDgECD4KtAwOgcwwgDHOgAwOtgjNDAgJDMzNDAgJDAx8DrYN2+4YODob7doOt/m8CQzMzRAEBRDMzQwB4nGNgZGBgAOKHWXX88fw2Xxm4WRhA4Prvxi4E/f8ZCwOzApDLwcAEEgUAQ9ULWQB4nGNgZGBgbvjfwBDDwgACQJKRARUwAQBHCAJrBAAAAAQAAAAAAAAAADIAAHicY2BkYGBgYpAGYgYwi4GBCwgZGP6D+QwAC1EBNgAAeJxlj01OwzAQhV/6B6QSqqhgh+QFYgEo/RGrblhUavdddN+mTpsqiSPHrdQDcB6OwAk4AtyAO/BIJ5s2lsffvHljTwDc4Acejt8t95E9XDI7cg0XuBeuU38QbpBfhJto41W4Rf1N2MczpsJtdGF5g9e4YvaEd2EPHXwI13CNT+E69S/hBvlbuIk7/Aq30PHqwj7mXle4jUcv9sdWL5xeqeVBxaHJIpM5v4KZXu+Sha3S6pxrW8QmU4OgX0lTnWlb3VPs10PnIhVZk6oJqzpJjMqt2erQBRvn8lGvF4kehCblWGP+tsYCjnEFhSUOjDFCGGSIyujoO1Vm9K+xQ8Jee1Y9zed0WxTU/3OFAQL0z1xTurLSeTpPgT1fG1J1dCtuy56UNJFezUkSskJe1rZUQuoBNmVXjhF6XNGJPyhnSP8ACVpuyAAAAHicY2BigAAuBuyAiZGJkZmBvao0PykzMZ+BAQAVCAMW') format('woff'),
+  url('iconfont.ttf?t=1540710538311') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+  url('iconfont.svg?t=1540710538311#iconfont') format('svg'); /* iOS 4.1- */
+}
+.iconfont {
+  font-family:"iconfont" !important;
+  font-size:16px;
+  font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.icon-zuobiao:before { 
+  content: "\e615"; 
+}
+page, .page, .page__bd {
+    height: 100%;
+}
+.weui-panel__hd {
+    padding:14px 15px 10px;
+    color:#999;
+    font-size:13px;
+    position:relative;
+}
+.page__bd {
+    padding-bottom: 0;
+}
+.weui-cell {
+    padding: 12px 15px 4px 15px;
+}
+
+.content-label {
+    display: flex;
+    flex-direction: column;
+}

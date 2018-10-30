@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "Search-Bar-Black": "/components/SearchBarBlack/SearchBarBlack",
+    "Budget-Content-Item":"/components/Budget_Content_Item/Budget_Content_Item",
+    "ReimBursement":"/components/reimbursement/reimbursement"
+  },
+  "navigationBarTitleText": "预算采购报销"
+}

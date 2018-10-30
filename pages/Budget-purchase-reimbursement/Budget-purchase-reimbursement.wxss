@@ -1,0 +1,25 @@
+/* pages/Budget-purchase-reimburesement/Budget-purchase-reimbursement.wxss */
+.weui-navbar {
+  border-bottom: none;
+}
+.weui-navbar__item {
+  background-color: #2B2A30!important;
+  color: white!important;
+}
+.weui-bar__item_on {
+  background-color: white!important;
+  color:  #2B2A30!important;
+}
+.weui-icon-search_in-box {
+  top:5px;
+}
+.weui-navbar__item {
+  padding: 8px 0 !important;
+}
+.weui-cell__bd {
+  margin-left: 15px;
+  font-size: 14px;
+}
+.weui-tab__panel {
+  padding-top: 40px;
+}

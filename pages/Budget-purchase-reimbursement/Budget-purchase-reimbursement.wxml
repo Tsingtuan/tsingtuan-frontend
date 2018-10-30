@@ -1,0 +1,71 @@
+<!--pages/Budget-purchase-reimburesement/Budget-purchase-reimbursement.wxml-->
+<view class="page">
+    <Search-Bar-Black tabTitle="{{tabTitles}}"/>
+    <view class="page__bd">
+        <view class="weui-tab">
+            <view class="weui-navbar">
+                <block wx:for="{{tabs}}" wx:key="*this">
+                    <view id="{{index}}" class="weui-navbar__item {{activeIndex == index ? 'weui-bar__item_on' : ''}}" bindtap="tabClick">
+                        <view class="weui-navbar__title">{{item}}</view>
+                    </view>
+                </block>
+            </view>
+            <!-- 预算tab -->
+            <view class="weui-tab__panel">
+                <view class="weui-tab__content" hidden="{{activeIndex != 0}}">
+                  <view>
+                      <view class="weui-cell">
+                        <view class="weui-cell__hd">
+                            <image src="/images/icon_tabbar.png" style="margin-right: 5px;vertical-align: middle;width:20px; height: 20px;"></image>
+                        </view>
+                        <view class="weui-cell__bd">预算填写</view>   
+                    </view>
+                    <view class="weui-cell">
+                        <view class="weui-cell__hd">
+                            <image src="/images/icon_tabbar.png" style="margin-right: 5px;vertical-align: middle;width:20px; height: 20px;"></image>
+                        </view>
+                        <view class="weui-cell__bd">一键导入Excel</view>
+                    </view>
+                    <view class="weui-cell">
+                        <view class="weui-cell__hd">
+                            <image src="/images/icon_tabbar.png" style="margin-right: 5px;         vertical-align: middle;width:20px; height: 20px;"></image>
+                        </view>
+                        <view class="weui-cell__bd">预算记录</view>
+                    </view>
+                  </view> 
+                </view>
+                 <!-- 采购tab  -->
+                <view class="weui-tab__content" hidden="{{activeIndex != 1}}">
+                    <view class="weui-panel__hd">
+                      <navigator url="" class="weui-footer__link" wx:for="{{purchase}}">{{item}}                              </navigator>
+                    </view>
+                    <Budget-Content-Item wx:for="{{ purchaseInfo }}" single="{{ item }}"/>
+                </view>
+                <!-- 报销tab -->
+                <view class="weui-tab__content" hidden="{{activeIndex != 2}}">
+                  <view wx:if="{{showList}}">
+                      <view class="weui-cell" bindtap="detailInto">
+                          <view class="weui-cell__hd">
+                              <image src="/images/icon_tabbar.png" style="margin-right: 5px;vertical-align: middle;width:20px; height: 20px;"></image>
+                          </view>
+                          <view class="weui-cell__bd">报销填写</view>   
+                      </view>
+                      <view class="weui-cell">
+                          <view class="weui-cell__hd">
+                              <image src="/images/icon_tabbar.png" style="margin-right: 5px;vertical-align: middle;width:20px; height: 20px;"></image>
+                          </view>
+                          <view class="weui-cell__bd">发票一键报销</view>
+                      </view>
+                      <view class="weui-cell">
+                          <view class="weui-cell__hd">
+                              <image src="/images/icon_tabbar.png" style="margin-right: 5px;vertical-align: middle;width:20px; height: 20px;"></image>
+                          </view>
+                          <view class="weui-cell__bd">报销记录</view>
+                      </view>
+                  </view>
+                  <ReimBursement wx:if="{{showReim}}"/>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>

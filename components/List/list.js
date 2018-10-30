@@ -24,7 +24,7 @@ Component({
                 title: "预算采购报销",
                 intro: "活动预算申请、采购商推荐、统一报账管理",
                 iconClass: "icon-Account",
-                url: ""
+                url: "/pages/Budget-purchase-reimbursement/Budget-purchase-reimbursement"
             },
             {
                 title: "拉赞助 & 社团联动",

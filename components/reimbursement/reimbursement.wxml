@@ -1,0 +1,96 @@
+<!--components/reimbursement/reimbursement.wxml-->
+      <view class="weui-cells__title">报销填写</view>
+        <view class="weui-cells weui-cells_after-title">
+          <view class="weui-cell weui-cell_input">
+                <view class="weui-cell__hd">
+                    <view class="weui-label">项目</view>
+                </view>
+                <view class="weui-cell__bd">
+                    <input class="weui-input" placeholder="请填写你的项目"/>
+                </view>
+          </view>
+
+          <view class="weui-cell weui-cell_input">
+                <view class="weui-cell__hd">
+                    <view class="weui-label">采购项</view>
+                </view>
+                <view class="weui-cell__bd">
+                    <input class="weui-input" placeholder="请填写"/>
+                </view>
+          </view>
+
+          <view class="weui-cell weui-cell_input">
+                <view class="weui-cell__hd">
+                    <view class="weui-label">采购人</view>
+                </view>
+                <view class="weui-cell__bd">
+                    <input class="weui-input" placeholder="请填写"/>
+                </view>
+          </view>
+
+          <view class="weui-cell weui-cell_input">
+                <view class="weui-cell__hd">
+                    <view class="weui-label">采购日期</view>
+                </view>
+                <view class="weui-cell__bd">
+                    <picker mode="date" value="{{date}}" start="2015-09-01" end="2017-09-01" bindchange="bindDateChange">
+                        <view class="weui-input">{{date}}</view>
+                    </picker>
+                </view>
+          </view>
+
+          <view class="weui-cell weui-cell_input">
+                <view class="weui-cell__hd">
+                    <view class="weui-label">采购数量</view>
+                </view>
+                <view class="weui-cell__bd">
+                    <input class="weui-input" placeholder=""/>
+                </view>
+          </view>
+
+          <view class="weui-cell weui-cell_input">
+                <view class="weui-cell__hd">
+                    <view class="weui-label">总金额</view>
+                </view>
+                <view class="weui-cell__bd">
+                    <view class="weui-input">23</view>
+                </view>
+          </view>
+
+          <view class="weui-cell weui-cell_input">
+                <view class="weui-cell__hd">
+                    <view class="weui-label">提供商</view>
+                </view>
+                <view class="weui-cell__bd">
+                    <view class="weui-input">腾讯大老爷</view>
+                </view>
+          </view>
+
+          <view class="weui-cell weui-cell_input">
+                <view class="weui-cell__hd">
+                    <view class="weui-label">图片备注</view>
+                </view>
+                <view class="weui-cell__bd">
+                    <view style="padding:8px 0">
+                      <image src="/images/quantao.jpg" style="width:80px;height:80px"></image>
+                    </view>
+                </view>
+          </view>
+
+          <checkbox-group bindchange="bindAgreeChange">
+            <label class="weui-agree" for="weuiAgree">
+                <view class="weui-agree__text">
+                    <checkbox class="weui-agree__checkbox" id="weuiAgree" value="agree" checked="{{isAgree}}" />
+                    <view class="weui-agree__checkbox-icon">
+                        <icon class="weui-agree__checkbox-icon-check" type="success_no_circle" size="13" wx:if="{{isAgree}}"></icon>
+                    </view>
+                    <navigator url="" class="weui-agree__link"> 增加报销项 </navigator>
+                </view>
+            </label>
+          </checkbox-group>
+
+          <view class="weui-btn-area">
+            <button class="weui-btn" type="primary">确定</button>
+          </view> 
+</view>       
+
